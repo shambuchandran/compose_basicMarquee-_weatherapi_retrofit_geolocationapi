@@ -6,37 +6,6 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import java.util.concurrent.TimeUnit
 
-//object RetrofitInstance {
-//    private const val baseUrl="https://api.weatherapi.com"
-//    private fun getInstance():Retrofit{
-//        val client = OkHttpClient.Builder()
-//            .connectTimeout(30, TimeUnit.SECONDS)
-//            .readTimeout(30, TimeUnit.SECONDS)
-//            .build()
-//
-//        return Retrofit.Builder()
-//            .baseUrl(baseUrl)
-//            .client(client)
-//            .addConverterFactory(GsonConverterFactory.create())
-//            .build()
-//    }
-//    val weatherApi:WeatherApiInterface = getInstance().create(WeatherApiInterface::class.java)
-//}
-//object GeolocationRetrofitInstance {
-//    private const val BASE_URL = "https://ipinfo.io/"
-//    val geoApi: GeolocationApi by lazy {
-//        val client = OkHttpClient.Builder()
-//            .connectTimeout(30, TimeUnit.SECONDS)
-//            .readTimeout(30, TimeUnit.SECONDS)
-//            .build()
-//        Retrofit.Builder()
-//            .baseUrl(BASE_URL)
-//            .client(client)
-//            .addConverterFactory(GsonConverterFactory.create())
-//            .build()
-//            .create(GeolocationApi::class.java)
-//    }
-//}
 object RetrofitInstance {
 
     // Create a single OkHttpClient to be reused by both weather and geolocation APIs
